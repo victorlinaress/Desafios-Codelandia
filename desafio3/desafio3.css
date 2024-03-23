@@ -1,0 +1,268 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: var(--white);
+  color: var(--black);
+  font-family: var(--font-roboto);
+  font-size: 1.6rem;
+}
+
+:root {
+  --lilac: #eeeeff;
+  --lilac-dark: #846aff;
+  --lilac-light: #f8f8ff;
+  --black: #121214;
+  --gray: #7c7c8a;
+  --gray-light: #eaeaea;
+  --white: #fff;
+  --font-roboto: "Roboto", sans-serif;
+  font-size: 62.5%;
+}
+
+div {
+  display: block;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #eeeeff;
+  height: 70vh;
+  justify-content: space-between;
+  padding: 60px 0;
+}
+
+.title {
+  width: 580px;
+  height: 96px;
+  font-size: 30px;
+  margin-left: 150px;
+}
+
+.title2 {
+  margin-left: 150px;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.melhores {
+  color: rgba(132, 106, 255, 1);
+}
+
+.btn {
+  margin-top: 60px;
+  color: white;
+  background-color: rgba(132, 106, 255, 1);
+  border-radius: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-left: 17rem;
+}
+
+.melhores {
+  color: rgba(132, 106, 255, 1);
+}
+
+img {
+  width: 100%; /* Faça com que a imagem ocupe 100% da largura do contêiner */
+  height: auto; /* Mantenha a proporção da imagem */
+}
+
+.container {
+  max-width: 124rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.container h2 {
+  font-size: 30px;
+  margin: 10rem 1rem;
+  margin-left: ;
+}
+.main-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 30%;
+  height: 30%;
+  border: 2px solid rgba(132, 106, 255, 0.1);
+  text-align: center;
+}
+
+.card__image {
+  width: 100%;
+  height: 100%;
+}
+
+.card__text {
+  padding: 3rem 2.1rem;
+}
+
+.card__text p {
+  margin-top: 1.2rem;
+  font-size: 1.8rem;
+  line-height: 150%;
+}
+
+.card__image img {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #eeeeff;
+}
+
+.form {
+  display: grid;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 50vw;
+  height: 50vh;
+}
+
+.form h1 {
+  margin: 7rem;
+}
+
+footer h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer input {
+  height: 5.9rem;
+  padding-left: 2rem;
+  border-radius: 0.4rem;
+  border: 0.2rem solid var(--gray-light) !important;
+  font-family: var(--font-roboto);
+}
+form input:active,
+form input:focus,
+form textarea:active,
+form textarea:focus {
+  outline-color: var(--lilac-dark);
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: var(--gray);
+  font-family: var(--font-roboto);
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+
+form textarea {
+  height: 16.5rem;
+  padding: 2.1rem 0 0 1.5rem;
+  border-radius: 0.6rem;
+  border: none;
+  resize: none;
+  font-family: var(--font-roboto);
+}
+
+form button {
+  padding: 1.5rem 0;
+  background: var(--lilac-dark);
+  color: var(--white);
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 0.6rem;
+  border: none;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+form button:hover {
+  opacity: 0.9;
+}
+
+.card,
+form,
+header {
+  visibility: hidden;
+}
+
+/* -- MEDIA QUERIES -- */
+
+@media only screen and (max-width: 768px) {
+  .header {
+    width: 100%; /* Ajuste conforme necessário */
+    height: 100%;
+    background-size: cover;
+  }
+
+  .title,
+  .title2 {
+    font-size: 2rem;
+    width: 60%;
+    margin-left: 50px;
+  }
+
+  .btn {
+    font-size: 1.5rem; /* Ajuste conforme necessário */
+    padding: 1rem;
+  }
+
+  .main-cards {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    gap: 50px;
+  }
+
+  .card {
+    width: 200%;
+    height: 100%;
+    gap: 50px;
+  }
+
+  .card_text {
+    width: 50%;
+    height: 50%;
+  }
+  .card__image {
+    width: 100%;
+    height: auto;
+  }
+
+  main h2 {
+    font-size: 1rem;
+    align-items: center;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form h1 {
+    margin-top: -150px;
+    margin-left: 0px;
+  }
+}

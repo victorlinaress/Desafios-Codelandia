@@ -1,0 +1,185 @@
+/* Reset de estilos globais */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Definições iniciais do HTML */
+html {
+  font-size: 62.5%;
+}
+
+/* Estilos do corpo da página */
+body {
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  background: var(--white);
+  color: var(--black);
+  overflow-x: hidden;
+}
+
+/* Zerando margens para todos os cabeçalhos */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/* Estilos para o cabeçalho geral */
+.header {
+  display: grid;
+  background-color: white;
+  justify-content: center;
+  margin: 25px;
+}
+
+.header h1 {
+  margin-top: 5px;
+}
+
+/* Estilos para o segundo cabeçalho */
+.header2 {
+  display: grid;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 90vh;
+  background-color: #121214;
+}
+
+.header2 .img-jordan {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.header2 h1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  align-self: flex-start;
+  text-align: left;
+}
+
+.header2 p {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: -90px;
+  white-space: pre-line;
+  margin-left: 45px;
+  text-align: left;
+}
+
+/* Estilos para imagens */
+img {
+  max-width: 100%;
+  margin-left: 25px; /* Ajuste conforme necessário */
+  align-self: flex-end;
+  margin-top: 1rem;
+}
+
+/* Estilos para títulos secundários */
+.header2 h2 {
+  text-align: center;
+  margin: 1rem 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Estilos para o bloco de cartas */
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  max-width: 1400px;
+  padding: 10px 80px;
+  margin: auto;
+}
+
+/* Estilos para o título das cartas */
+.title2 {
+  color: black;
+}
+
+/* Estilos para o container geral */
+.container {
+}
+
+/* Estilos para os parágrafos no container */
+.container p {
+}
+
+/* Estilos para o bloco de parallax */
+.parallax {
+  background-image: url("../img/wallpaper.png");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Estilos para o container de cartas */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Estilos para cartas individuais */
+.card {
+  width: 30%;
+  margin-bottom: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Estilos para a categoria das cartas */
+.card-category {
+  position: relative;
+  top: 50;
+  right: 50;
+  font-size: 20px;
+  color: black;
+}
+
+/* Estilos para o preço das cartas */
+.card-price {
+}
+
+/* Estilos para informações dentro das cartas */
+.card-info h4 {
+}
+
+/* Estilos para o bloco de imagem */
+.img {
+  background-color: #f0f8ff;
+  width: 100%;
+  height: 100%;
+  padding: 5rem ;
+  margin: auto;
+  background-size:auto;
+ 
+
+}
+
+/* Estilos para informações dentro das cartas */
+.card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+/* Estilos para a descrição da carta */
+.card-description {
+}

@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+:root {
+  --brand-color-green: #04c35c;
+  --brand-color-blue: #2b6cb0;
+  --dark-10: #1a202c;
+  --dark-20: #f7fafc;
+  --dark-30: #ffffff;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.col-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--dark-20);
+  width: 100vw;
+  height: 100vh;
+}
+.col-left img {
+  width: 400px;
+}
+
+.col-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-30);
+  width: 100vw;
+  height: 100vh;
+}
+
+/* dark theme*/
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+
+.col-right .login {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.remember p {
+  margin-left: 3px;
+  margin-bottom: 3px;
+}
+
+.wel {
+  display: flex;
+  flex-direction: column;
+  font-family: "Merriweather", serif;
+  padding-bottom: 30px;
+  gap: 10px;
+}
+
+.wel h4 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.wel h2 {
+  font-size: 26px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 4s steps(23) alternate, blink 800ms steps(23) normal;
+  border-right: 1px solid #d9d9d9;
+}
+
+.login input {
+  width: 350px;
+  padding: 20px;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.remember label {
+  display: flex;
+  align-items: center;
+}
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+.col-right .entrarbtn {
+  background-color: var(--brand-color-green);
+  border: 2px solid var(--brand-color-green);
+}
+
+.col-right .entrarbtn:hover {
+  border: 2px solid #5ac304;
+  color: #5ac304;
+  background-color: var(--dark-30);
+}
+
+.col-right .loginbtn {
+  background-color: var(--dark-10);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.col-right .loginbtn:hover {
+  background-color: var(--brand-color-blue);
+}
+
+.entrarbtn,
+.loginbtn {
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.welcome button {
+  height: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--dark-30);
+  padding: 15px; /* Ajuste o preenchimento conforme necessário */
+  height: 60px; /* Ajuste a altura conforme necessário */
+  width: 355px; /* Ajuste a largura conforme necessário */
+  margin-bottom: 20px;
+}
+
+.final {
+  text-align: center;
+}
+
+.wel {
+  position: relative;
+  right: 25px;
+}
+
+.wel h4 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.wel h2 {
+  font-size: 26px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 4s steps(23) alternate, blink 800ms steps(23) normal;
+  border-right: 1px solid #d9d9d9;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  from {
+    border-color: #d9d9d9;
+  }
+  to {
+    border-color: transparent;
+  }
+}
+
+.dark-theme {
+  position: absolute;
+  top: 5%;
+  right: 17%;
+}
+
+.dark {
+  background-color: var(--dark-10);
+  color: var(--dark-30);
+  transition: background 0.3s linear;
+}
+
+.dark .loginbtn:hover {
+  border: 2px solid #5ac304;
+  box-shadow: #5ac304 0px 0px 12px 1px inset, #5ac304 0px 0px 12px 1px;
+  background: linear-gradient(0deg, #1a202c 27.26%, #1a202c 96.03%);
+}
+
+.dark .loginbtn {
+  background: linear-gradient(90deg, #283749 27.26%, #2b4769 96.03%);
+}
+
+.dark .loginbtn:hover {
+  background: linear-gradient(236.85deg, #375b86 27.26%, #6b87a9 96.03%);
+}
+
+.dark.col-right a:hover {
+  color: var(--dark-30);
+}
+
+.dark.col-left {
+  background-color: #818181;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: #111;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 5px;
+  position: relative;
+  height: 26px;
+  width: 50px;
+  transform: scale(1.5);
+}
+
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}

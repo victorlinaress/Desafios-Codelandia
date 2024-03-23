@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="your-integrity-hash"
+      crossorigin="anonymous"
+    />
+    <title>Login</title>
+    <link rel="stylesheet" href="desafio4.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="col-left" id="col-left">
+        <img src="Screenshot_1.png" />
+      </div>
+      <div class="col-right" id="col-right">
+        <div class="dark-theme">
+          <input type="checkbox" class="checkbox" id="chk" />
+          <label class="label" for="chk">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <div class="ball"></div>
+          </label>
+        </div>
+        <div class="wel">
+          <h4>Bem vindo de volta</h4>
+          <h2>Faça login na sua conta</h2>
+        </div>
+        <form>
+          <div class="login">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+            <label for="password">Senha</label>
+            <input type="password" id="senha" name="senha" required />
+          </div>
+          <div class="remember">
+            <label for="radio">
+              <input type="checkbox" id="radio" name="radio" />
+              <p>Lembre de mim</p>
+            </label>
+            <p><a href="">Esqueceu sua senha?</a></p>
+          </div>
+          <div class="welcome">
+            <button type="submit" class="entrarbtn">Entrar</button>
+            <button type="button" class="loginbtn">
+              <img class="google" src="icon_google.svg" /> Faça login com o
+              Google
+            </button>
+            <p class="final">Não tem conta? <a href="#">Cadastre-se</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="desafio4.js"></script>
+  </body>
+</html>
